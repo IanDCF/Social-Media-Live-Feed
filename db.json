@@ -1,0 +1,16 @@
+{
+  "posts": [
+    {
+      "content": "asdf",
+      "id": 1
+    },
+    {
+      "content": "asd",
+      "id": 2
+    },
+    {
+      "content": "asdf",
+      "id": 3
+    }
+  ]
+}
