@@ -1,7 +1,7 @@
 import { React, useState, useEffect } from 'react'
 import SharePost from './Components/SharePost'
 import Posts from './Components/Posts'
-import { v4 as uuidv4 } from 'uuid'
+// import { v4 as uuidv4 } from 'uuid'
 
 function App() {
 
@@ -39,11 +39,11 @@ function App() {
     })
 
     const data = await res.json()
-    
+
     setPosts([...posts, data])
 
     //  // Set content variable to text input of post
-    //  const content = post.text
+    //  const content = post.content
     //  // Set Posts to all pervious posts + newly added post with new id
     //  setPosts(prevPosts => {
     //    return [...prevPosts, {id: uuidv4(), content: content}]
@@ -62,7 +62,7 @@ function App() {
     setPosts(posts.filter((post) => post.id !== id))
   }
 
-
+  
   return ( 
     <>
       <SharePost onShare={sharePost}/>

@@ -7,7 +7,7 @@ export default function Posts({ posts, onDelete }) {
       
     <>
         {posts.map((post) => (
-            <Post key={post.id} post={post} onDelete={onDelete} />
+            <Post key={post.id} post={post} onDelete={onDelete}/>
         ))}
     </>
   )

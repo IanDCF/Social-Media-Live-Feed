@@ -4,6 +4,7 @@ import Button from './Button'
 export default function SharePost({ onShare }) { 
 
   const [content, setText] = useState('')
+  
 
   const onSubmit = (e) => {
     // Prevent a browser reload / refresh
@@ -20,11 +21,11 @@ export default function SharePost({ onShare }) {
   }
 
   return (
-    <form className="add-form" onSubmit={onSubmit}>
+    <form className="post-form" onSubmit={onSubmit}>
         <div>
-            <h1>Write a post</h1>
-            <h3>Share something...</h3>
-            <textarea value={content} onChange={(e) => setText(e.target.value)} rows='4' cols='30' placeholder='write your post'/> 
+            <h1 style={{fontFamily: "Helvetica"}}>Live Feed</h1>
+            <p style={{fontFamily: "Helvetica"}}>___________________________________________________</p>
+            <textarea value={content} onChange={(e) => setText(e.target.value)} rows='2' cols='55' placeholder="What's on your mind?"/> 
         </div>
         <Button type='submit' text='Share' />
     </form>
