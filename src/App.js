@@ -64,13 +64,13 @@ function App() {
 
   
   return ( 
-    <>
+  <div className="main-container">
       <SharePost onShare={sharePost}/>
       {posts.length > 0 
         ? <Posts posts={posts} onDelete={deletePost}/>
         : <h4>No posts at the moment</h4>}
 
-    </>
+    </div>
   );
 }
 

@@ -1,16 +1,16 @@
 {
   "posts": [
     {
-      "content": "asdf",
+      "content": "I went for a bike ride today :)",
+      "id": 1
+    },
+    {
+      "content": "The weather is amazing! ",
       "id": 2
     },
     {
-      "content": "asdf",
+      "content": "Just ordered a PIZZA...",
       "id": 3
-    },
-    {
-      "content": "ddd",
-      "id": 4
     }
   ]
 }

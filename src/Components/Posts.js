@@ -4,11 +4,10 @@ import Post from './Post'
 export default function Posts({ posts, onDelete }) {
 
   return (
-      
-    <>
-        {posts.map((post) => (
-            <Post key={post.id} post={post} onDelete={onDelete}/>
-        ))}
-    </>
+    <div className="posts-container">
+    {posts.map((post) => (
+        <Post className="post-container" key={post.id} post={post} onDelete={onDelete}/>
+    ))}
+    </div>
   )
 }

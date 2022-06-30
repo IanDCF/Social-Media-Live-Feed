@@ -21,13 +21,17 @@ export default function SharePost({ onShare }) {
   }
 
   return (
-    <form className="post-form" onSubmit={onSubmit}>
-        <div>
-            <h1 style={{fontFamily: "Helvetica"}}>Live Feed</h1>
-            <p style={{fontFamily: "Helvetica"}}>___________________________________________________</p>
-            <textarea value={content} onChange={(e) => setText(e.target.value)} rows='2' cols='55' placeholder="What's on your mind?"/> 
-        </div>
-        <Button type='submit' text='Share' />
-    </form>
+    <div className="sharepost-container"> 
+      <h1 className="header" style={{fontFamily: "Helvetica"}}>Live Feed</h1>
+      <form className="sharepost-form" onSubmit={onSubmit}>
+          <div>
+              <textarea className="textarea" value={content} onChange={(e) => setText(e.target.value)} rows='4' cols='55' placeholder="What's on your mind?"/> 
+          </div>
+          <div className="post-btn">
+           <Button type='submit' text='Post' />
+          </div>
+          
+      </form>
+    </div>
   )
 }

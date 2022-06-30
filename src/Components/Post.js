@@ -11,13 +11,17 @@ export default function Post({ post, onDelete}) {
   }
 
   return (
-    <div className='Post'>
-        <br />
-        <h4>{post.content}</h4> 
-        <p><BiHeart/>{likes} <BiLike/><BiCommentAdd/><BiShareAlt/><BiX/></p>
-        <Button text="Like" onClick={count}/>
-        <Button text= "Comment" />
-        <Button text="Delete" onClick={() => onDelete(post.id)}/>
-    </div>
+    <div className="post-container">
+      <h4 className="post-content">{post.content}</h4> 
+      <div className="likes">
+        <p><BiHeart/>{likes}</p>
+      </div>
+      <div className="post-btns">
+        <Button text={<BiLike/>} onClick={count}/>
+        <Button text= {<BiCommentAdd/>} />
+        <Button text= {<BiShareAlt/>} />
+        <Button text={<BiX/>} onClick={() => onDelete(post.id)}/>
+      </div>
+    </div>  
   )
 }
