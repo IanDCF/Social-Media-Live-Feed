@@ -15,6 +15,10 @@ body {
     border-radius: 8px;
 }
 
+.header {
+    margin-left: 15px;
+}
+
 .sharepost-container {
     padding: 10px;
     background-color: rgba(241, 241, 241, 0.948);
@@ -22,9 +26,12 @@ body {
 }
 
 textarea {
+    margin-right: 15px;
+    margin-left: 15px;
     padding: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
+    border-radius: 8px;
 }
 
 textarea::placeholder {
@@ -32,6 +39,7 @@ textarea::placeholder {
     font-weight: 400;
 }
 .post-btn {
+    margin-right: 15px;
     display: flex;
     justify-content: right;
 }
@@ -47,7 +55,7 @@ textarea::placeholder {
     margin: 15px;
     padding: 10px;
     background-color: rgb(255, 255, 255);
-    border: 2px solid rgba(217, 217, 217, 0.521);
+    border: 1px solid rgba(204, 204, 204, 0.521);
     border-radius: 8px;
 }
 
@@ -60,6 +68,8 @@ textarea::placeholder {
     display: flex;
     justify-content: center; 
     align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
 }
 
 .post-btns {
