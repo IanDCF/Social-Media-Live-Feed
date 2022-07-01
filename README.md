@@ -1,4 +1,4 @@
-![Screen Shot 2022-06-29 at 5 11 08 PM](https://user-images.githubusercontent.com/70978167/176566283-77af5f87-db9f-4d92-96bd-405d72b4efb2.png)
+![Screen Shot 2022-06-30 at 7 02 08 PM](https://user-images.githubusercontent.com/70978167/176808825-ae6d074f-8f8a-4f70-8ba9-8c529149d19b.png)
 
 
 # Getting Started with Create React App
